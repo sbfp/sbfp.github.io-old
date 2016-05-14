@@ -7,7 +7,7 @@ tags: about
 
 Hi my name is Søren Flø Larsen. I'm a programmer, solution architect and tech geek.
 
-Currently I work at [Bankdata](http://bankdata.dk/en), a large financial company severing IT and solutions to 11 banks in Denmark.
+Currently I work at [Bankdata](http://bankdata.dk/en), a large financial company delivering IT and solutions to 11 banks in Denmark.
 
 As a **programmer** I mainly write in Java, but I also do COBOL (Yes, I’m one of the dinosaurs), HTML, CSS and Javascript.
 
