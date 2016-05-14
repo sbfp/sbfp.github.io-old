@@ -2,9 +2,9 @@
 title:       sbfp.dk
 email:       soren@sbfp.dk
 author:      Søren Flø Larsen
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+description: "A blog about me, my interests, and other random stuff"
 baseurl:     ""
-url:         "http://localhost:4000"
+url:         "http://sbfp.github.io/"
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -20,7 +20,7 @@ bing_verification:
 animated:             false
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    false
+show_social_icons:    true
 ajaxify_contact_form: false
 enable_mathjax: false
 extended_fonts: false
@@ -40,11 +40,11 @@ facebook_comments_number: 10
 github_username:
 bitbucket_username:
 stackoverflow_id:
-twitter_username:
+twitter_username: sbfp
 skype_username:
 steam_nickname:
 google_plus_id:
-linkedin_username:
+linkedin_username: sorenbfpedersen
 angellist_username:
 medium_id:
 bitcoin_url:
