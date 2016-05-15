@@ -4,7 +4,7 @@ email:       soren@sbfp.dk
 author:      Søren Flø Larsen
 description: "A blog about me, my interests, and other random stuff"
 baseurl:     ""
-url:         "http://sbfp.github.io/"
+url:         "http://sbfp.dk"
 date_format: "%b %-d, %Y"
 
 # Google services
