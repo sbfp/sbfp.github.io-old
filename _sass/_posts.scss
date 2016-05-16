@@ -20,6 +20,14 @@
   color: #333;
 }
 
+.post .avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  border-radius: 50%;
+}
+
 .post-footer {
   @extend .italic;
 
