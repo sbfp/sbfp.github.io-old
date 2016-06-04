@@ -6,8 +6,10 @@ summary:    Cool handbook helping me getting to know the basics of bash
 categories: Bash Github
 ---
 
+![](/images/bash-handbook.png)
+
 Lately I've been working a lot on my mac, and found out that I'm not very familiar with bash.
-I searched for a getting started guide and found a guy who made his own handbook.
+I searched for a "Getting started" guide and found a guy who made his own handbook.
 He wrote the book to himself not to forget the basics of bash.
 
 I've not read the whole book yet but I've read enough to learn that it's worth a share. So here goes!  
