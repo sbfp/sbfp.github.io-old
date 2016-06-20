@@ -13,13 +13,16 @@ Currently I work at [Bankdata](http://bankdata.dk/en), a large financial company
 I live in Kolding, Denmark with my wife and our two French Bulldogs.
 
 
-As a **programmer** I mainly write in Java, HTML, CSS and Javascript. But I also do COBOL (Yes, I’m one of the dinosaurs).
+As a **programmer** I mainly write my code in Java, HTML, CSS and Javascript. I also do COBOL but I prefer the Object-Oriented languages. I'm obsessed with writing Clean Code and I'm constantly working on writing smarter code and tests.
 
-As a **solution architect** I enjoy searching for, and finding the right technical solutions when facing new problems.
+As a **solution architect** I enjoy searching for, and finding the right technical solutions when facing new problems. I love spending time with the business, understanding their requirements and translating those requirements into good architecture.
 
 As a **tech geek** I use a lot of my spare time playing around with new technologies. I recently have been playing with:
 
 * Swift
+
+I think it's important to play around with other technologies and languages to keep getting better at what I do. I'ts not everything I'm able to take a deep dive into, but I think I learn a lot just being curious
+
 
 **_Books I recently read:_**
 
