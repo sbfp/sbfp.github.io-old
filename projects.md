@@ -9,5 +9,7 @@ Here you find some of my sparetime projects. I use this page to showcase what I'
 
 **React**
 
+React is Facebooks JavaScript libary used for building user interfaces. To lean more visit [https://facebook.github.io/react/](https://facebook.github.io/react/)
+
 
 [React Weather App](http://thawing-lowlands-87282.herokuapp.com/) - React app made during a course I took. This app teached me the fundementals of React. The app searches for weather by city. Feel free to try it out :)
