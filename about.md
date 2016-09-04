@@ -21,7 +21,7 @@ As a **tech geek** I use a lot of my spare time playing around with new technolo
 
 * Swift
 
-I think it's important to play around with other technologies and languages to keep getting better at what I do. I'ts not everything I'm able to take a deep dive into, but I think I learn a lot just being curious
+I think it's important to play around with other technologies and languages to keep getting better at what I do. I'ts not everything I'm able to take a deep dive into, but I think I learn a lot just by being curious
 
 
 **_Books I recently read:_**
