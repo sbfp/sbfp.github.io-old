@@ -1,14 +1,5 @@
-<footer class="center">
-  <div class="measure">
-    <small>
-      Theme crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
-      &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
-    </small>
-  </div>
+<footer class="site-footer">
+    <button class="go-to-top"></button>
+    <p class="copyright"><a href="{{site.github.url | prepend: site.baseurl}}" title="{{ site.title }}">{{site.title}}</a> &copy; {{ site.time | date: '%Y' }} | <a href="{{ "/feed.xml" | prepend: site.github.url | prepend: site.baseurl}}" title="RSS Feed">RSS Feed</a></p>
+    <p class="poweredby">powered by <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a> with the <a href="https://github.com/jwillmer/jekyllDecent" title="jekyllDecent Theme">jekyllDecent</a> theme</p>
 </footer>
-{% if site.enable_anchorjs %}<!-- AnchorJS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.0.0/anchor.min.js"></script>
-<script>
-    anchors.options.visible = 'always';
-    anchors.add('article h2, article h3, article h4, article h5, article h6');
-</script>{% endif %}

@@ -1,28 +1,77 @@
 ---
 layout: default
+author:    sbfp
 ---
-{% assign posts_count = (paginator.posts | size) %}
+{% if site.data.authors and site.data.authors[page.author] %}
+{% assign author = site.data.authors.[page.author] %}
+{% elsif site.data.authors %}
+{% assign author = site.data.authors[0] %}
+{% endif %}
 
-<div class="home">
-  {% if posts_count > 0 %}
-    <div class="posts">
-      {% for post in paginator.posts %}
-        <div class="post py3">
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <p class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </p>
-        </div>
-      {% endfor %}
+<div id="content" class="content">
+    <h3>Recent Posts</h3>
+    <ul class="category recent-posts">
+        {% for post in site.posts limit:5  %}
+        {% unless post.draft %}
+
+        {% if post.menutitle %}
+        {% assign title = post.menutitle %}
+        {% else %}
+        {% assign title = post.title %}
+        {% endif %}
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="{{ post.url | prepend: site.github.url | prepend: site.baseurl}}" title="{{ title }}">{{ title }}</a></span>
+                        <time class="date" itemprop="datePublished" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%B %e, %Y"}}</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        {% endunless %}
+        {% endfor %}
+    </ul>
+
+    <div class="author-meta">
+        {%  if author.email %}<a class="social-mail-alt" href="mailto:{{ author.email }}" itemprop="email">Mail</a>{% endif %}
+        {%  if author.twitter %}<a href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs" class="social-twitter">Twitter</a> {% endif %}
+        {%  if author.linkedin %}<a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs" class="social-linkedin">LinkedIn</a> {% endif %}
+        {%  if author.github %}<a href="https://github.com/{{ author.github }}" itemprop="sameAs" class="social-github-circled">GitHub</a> {% endif %}
+        {%  if author.stackoverflow %}<a href="http://stackoverflow.com/users/{{ author.stackoverflow }}" itemprop="sameAs" class="social-stackoverflow">StackOverflow</a> {% endif %}
+        {%  if author.facebook %}<a href="https://www.facebook.com/{{ author.facebook }}" itemprop="sameAs" class="social-facebook-squared">Facebook</a> {% endif %}
     </div>
 
-    {% include pagination.html %}
-  {% else %}
-    <h1 class='center'>{{ site.text.index.coming_soon }}</h3>
-  {% endif %}
+<!--
+    {% assign sorted_cats = site.categories | sort %}
+    {% for category in sorted_cats %}
+    {% assign sorted_posts = category[1] | reversed %}
+    <h3 id="{{category[0] | uri_escape | downcase | slugify }}">{{category[0] | camelcase }}</h3>
+    <ul class="category {{category[0] | uri_escape | downcase | slugify}}">
+        {% for post in sorted_posts %}
+        {% unless post.draft %}
+
+        {% if post.menutitle %}
+        {% assign title = post.menutitle %}
+        {% else %}
+        {% assign title = post.title %}
+        {% endif %}
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="{{ post.url | prepend: site.github.url | prepend: site.baseurl }}" title="{{ title }}">{{ title }}</a></span>
+                        <time class="date" itemprop="datePublished" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%B %e, %Y"}}</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        {% endunless %}
+        {% endfor %}
+    </ul>
+    {% endfor %}
+-->
+
 </div>

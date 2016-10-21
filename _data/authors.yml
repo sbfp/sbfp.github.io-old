@@ -1,0 +1,33 @@
+default:                                                      # Fallback if nothing is specified
+  initial:      sbfp                                          # used for author lookup in posts and for first two characters in the about page back button
+  name:         "Søren Flø Larsen"                            # used to display author name
+  cover:                                                      # OPTIONAL: defines location of cover image in about page
+  picture:      /assets/sbfp.jpg                              # OPTIONAL: author picture
+  bio:                                                        # OPTIONAL: text below author name in posts
+  location:     Denmark                                       # OPTIONAL: used to display location of the author
+  website:      "http://sbfp.dk/about"                        # OPTIONAL: link to the author of a post
+  email:                                                      # OPTIONAL: used in the about page
+  twitter:      sbfp                                          # OPTIONAL: used in the about page
+  linkedin:     sorenbfpedersen                               # OPTIONAL: used in the about page
+  xing:                                                       # OPTIONAL: used in the about page
+  github:       sbfp                                          # OPTIONAL: used in the about page
+  stackoverflow:                                              # OPTIONAL: used in the about page
+  facebook:                                                   # OPTIONAL: used in the about page
+  gplus:                                                      # OPTIONAL: used in the about page
+  soundcloud:                                                 # OPTIONAL: used in the about page
+  youtube:                                                    # OPTIONAL: used in the about page
+  pinterest:                                                  # OPTIONAL: used in the about page
+  dribble:                                                    # OPTIONAL: used in the about page
+  behance:                                                    # OPTIONAL: used in the about page
+sbfp:
+  initial:      sl
+  name:         "Søren Flø Larsen"
+  cover:        /assets/ktm-wallpaper-small.png
+  picture:      /assets/sbfp-headshot.jpg
+  bio:
+  location:     Denmark
+  website:      "http://sbfp.dk/about"
+  twitter:      sbfp
+  github:       sbfp
+  linkedin:     sorenbfpedersen
+  email:        soren@sbfp.dk
